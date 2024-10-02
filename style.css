@@ -1,0 +1,551 @@
+:root{
+  --primary-color: rgb(233, 20, 109);
+  --secondary-color: rgb(189, 17, 89);
+}
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Nerko+One&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+navbar{
+    background: white;
+}
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: white;
+    background: var(--primary-color);
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main-logo{
+    border-radius: 5px;
+    transition: 0.5s;
+    
+}
+
+
+.logo-l{
+    font-size: 25px;
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+.logo-l:hover{
+    color: black;
+}
+.logo-r{
+    padding-left: 5px;
+    padding-right: 4px;
+    background-color:var(--primary-color);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+      /* --------main section starllL ------*/
+
+.main{
+    background: url(./images/cover.jpg) no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 95vh;
+}     
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid var(--primary-color);
+    width: 44%;
+}
+.col-lg-6.pt {
+    padding-top: 5rem;
+}
+.main .bt1{
+    width: 138px;
+    height: 55px;
+    background-color:var(--primary-color);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    color: rgb(223, 219, 219);
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+.main .bt2{
+    width: 138px;
+    height: 55px;
+    background:transparent;
+    color: var(--primary-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt2:hover{
+    color: white;
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+
+}
+
+    /*---------About Me section start----------*/
+
+
+@media (max-width: 991px) {
+        .about-text {
+          margin-top: 40px;
+        }
+}
+.about-text h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+    @media (max-width: 767px) {
+        .about-text h3 {
+          font-size: 35px;
+        }
+      }
+      .about-text h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 767px) {
+        .about-text h4 {
+          font-size: 18px;
+        }
+      }
+      .about-text p {
+        font-size: 18px;
+      }
+      .about-text p mark {
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+      .about-text .btn-bar {
+        padding-top: 8px;
+      }
+      .about-text .btn-bar a {
+        min-width: 150px;
+        text-align: center;
+        margin-right: 10px;
+      }
+      
+      .about-list {
+        padding-top: 10px;
+      }
+      .about-list .media {
+        padding: 5px 0;
+      }
+      .about-list label {
+        color: var(--primary-color);
+        font-weight: 600;
+        width: 88px;
+        margin: 0;
+        position: relative;
+      }
+      .about-list label:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 11px;
+        width: 1px;
+        height: 12px;
+        background:var(--primary-color);
+        -moz-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+        margin: auto;
+        opacity: 0.5;
+      }
+      .about-list p {
+        margin: 0;
+        font-size: 15px;
+      }
+      
+      .about-img {
+        box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.06);
+        padding: 10px;
+        background: #ffffff;
+      }
+      @media (max-width: 991px) {
+        .about-img {
+          margin-top: 30px;
+        }
+      }
+      
+      .counter-section {
+        padding: 40px 20px;
+      }
+      .counter-section .count-data {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .counter-section .count {
+        font-weight: 700;
+        color: #ffffff;
+        margin: 0 0 10px;
+      }
+      .counter-section p {
+        font-weight: 500;
+        margin: 0;
+        color: var(--primary-color);
+      }
+      .theme-color {
+          color: var(--primary-color);
+      }
+      
+      .section {
+          padding: 100px 0;
+          position: relative;
+      }
+      .gray-bg {
+          background-color: #ebf4fa;
+      }
+      .px-btn.theme {
+          background: var(--primary-color);
+          color: #ffffff;
+          border: 2px solid var(--primary-color);
+      }
+      .px-btn {
+          padding: 0 20px;
+          line-height: 42px;
+          border: 2px solid transparent;
+          position: relative;
+          display: inline-block;
+          background: none;
+          border: none;
+          -moz-transition: ease all 0.35s;
+          -o-transition: ease all 0.35s;
+          -webkit-transition: ease all 0.35s;
+          transition: ease all 0.35s;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: 500;
+      }
+      
+.px-btn.theme-t {
+          background: transparent;
+          border: 2px solid var(--primary-color);
+          color: var(--primary-color);
+}
+      
+.px-btn.theme-t:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+.px-btn.theme:hover {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+    /*---------About Me section end----------*/
+
+
+
+    /*----------servise section start---------*/
+
+.serv-section-2{
+    position: relative;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.serv-section-2:before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 0;
+    content: " ";
+    width: 120px;
+    height: 120px;
+    background: #f5f5f5;
+    border-bottom-left-radius: 136px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-2-icon {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    max-width: 100px;
+    z-index: 1;
+    text-align: center;
+}
+
+.serv-section-2-icon i {
+    color: var(--primary-color);
+    font-size: 48px;
+    line-height: 65px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-desc {
+    position: relative;
+}
+
+.serv-section-2 h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.serv-section-2 h5 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.section-heading-line-left {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.serv-section-2 p {
+    margin-top: 25px;
+    padding-right: 50px;
+}
+
+.serv-section-2:hover .serv-section-2-icon i {
+    color: #fff;
+}
+
+.serv-section-2:hover:before {
+    background: var(--primary-color);
+}
+
+/*---------service section end----------*/
+
+
+/*---------Protfolio section start----------*/
+.control ul li{
+  list-style: none;
+  background-color: var(--primary-color);
+  padding: 5px 15px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.item{
+  position: relative;
+}
+.item:hover{
+  -webkit-box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+  -moz-box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+  box-shadow: -18px 3px 109px -65px rgba(0,0,0,0.75);
+  transition: 0.5s;
+
+}
+.item span{
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 40px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  opacity: 0;
+}
+.item:hover span{
+  opacity: 1;
+  transition: 0.5s;
+}
+.item::before{
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(238, 235, 230, 0.479);
+  opacity: 0;
+  position: absolute;
+}
+.item:hover::before{
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/*---------protfolio section end----------*/
+
+
+
+/*---------testimonials section start----------*/
+
+.card{
+  border-radius: 1rem;
+  box-shadow: 0px -10px 0px var(--primary-color);
+}
+@media(max-width:767px){
+  .card{
+      margin: 1rem 0.7rem 1rem;
+      max-width: 80vw;
+  }
+}
+img .t-img{
+  width: 6.2rem;
+  border-radius: 5rem;
+  margin: 1.3rem auto 1rem auto;
+}
+
+.col-md-4{
+  padding:0  0.5rem;
+}
+.card-title{
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'IM Fell French Canon SC';
+}
+.card-title:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card-text{
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: rgb(33, 31, 31);
+  line-height: 1.4rem;
+  cursor: pointer;
+}
+.t-footer{
+  border-top: none;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 0.5rem 0 0.4rem 0;
+  font-family: 'Varela Round';
+}
+#name{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.name h6{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 1;
+  border-bottom: 3px solid var(--primary-color);
+  cursor: pointer;
+  width: 100%;
+}
+#position{
+  font-size: 0.7rem;
+}
+.name h6:hover{
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+/*---------testimonials section end----------*/
+
+
+/*---------contact from start----------*/
+#contact{
+  background: #e8e8e8;
+}
+.form-area{
+  padding-top: 7%;
+}
+.row .single-form{
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.left-r{
+  background: var(--secondary-color);
+  position: relative;
+}
+.left-r{
+  padding: 14% 0% 17% 22%;
+  position: absolute;
+}
+.left h2{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  font-weight: 700;
+  font: 48px;
+  align-content: center;
+}
+.left-h2 h2 span{
+  font-weight: 100;
+  color: white;
+}
+.right{
+  padding: 70px 100px 0px 100px;
+  position: relative;
+}
+.right i{
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+
+}
+
+/*---------contact from end----------*/
+
+.copyright{
+  color: white;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+.copyright:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
